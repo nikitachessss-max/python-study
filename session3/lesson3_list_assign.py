@@ -52,5 +52,7 @@
 #   python session3/lesson3_list_assign.py
 #
 # --- КОД ---
-word = ["хуй", "тарелка", "таракан"]
-word[0] = "мат"
+word = ["утро", "день", "вечер"]
+print(word)
+word[2] = "ночь"
+print(word)
