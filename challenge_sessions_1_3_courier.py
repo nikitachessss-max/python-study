@@ -55,3 +55,34 @@
 # =============================================================================
 # --- КОД ---
 
+name = input("Привет. как тебя зовут?")
+print(f"рейс начат, {name}. Заполняем лист доставок!")
+
+n = int(input("сколько доставок внесли в лист?"))
+steps = []
+total = 0.0
+
+for i in range(1, n + 1):
+    adress = input("введите адрес: ")
+    cost = float(input("плата за доставку?"))
+    total = total + cost
+    step = f"{i}. {adress} - {cost} руб."
+    steps.append(step)
+
+print(f"общая сумма доставок {total} руб. ")
+print(f"количество доставок: {len(steps)} ")
+
+if  len(steps) >= 3:
+    print("первые три строчки чека(срез)")
+    print(steps[:3])
+
+print("---лист---")
+for i in steps:
+    print(i)
+print('Для завершения введите секретное слово: ок (маленькими буквами)')
+word = input("Введите слово: ").strip().lower()
+while word != "ок":
+    print("Неверно. Введите слово: ок")
+    word = input("Введите слово: ").strip().lower()
+
+print(f"Смена окончена, {name}. Удачи на дороге!")
