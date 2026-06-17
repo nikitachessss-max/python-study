@@ -18,7 +18,7 @@
 # Пиши код ниже
 attempts = 0
 word = input("напиши слово: ").strip()
-while word ! = "питон":
+while word != "питон":
       attempts = attempts + 1
       print("не то! пробуй еще")
       word = input("напиши слово: ").strip()
